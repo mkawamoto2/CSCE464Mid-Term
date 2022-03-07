@@ -1,9 +1,49 @@
-  <!--#include virtual="../common/document_head.html"-->
-  <!-- catalog.html -->
+<!DOCTYPE html>
+<!-- document_head.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/tablet.css"
+          media="screen and (max-width: 900px)">
+    <script src="scripts/rotate.js"></script>
+    <script src="scripts/menus.js"></script>
+    <script src="scripts/bmiFormProcess.js"></script>
+    <script src="scripts/bmiFormValidate.js"></script>
+    <script src="scripts/bmiCalculate.js"></script>
+    <script src="scripts/feedbackFormValidate.js"></script>
+    <title>Nature's Source - Canada's largest specialty vitamin store</title>
+  </head>
+
+<!-- catalog.html -->
   <body>
     <header>
-      <!--#include virtual="../common/logo.html"-->
-      <!--#include virtual="../common/menus.html"-->
+      <!-- logo.html -->
+      <div id="logo">
+        <img src="images/naturelogo.gif"
+          alt="Nature's Source"
+          width="608"
+          height="90">
+      </div>
+      
+      <!-- menus.html -->
+      <nav onmouseout="hide()">
+        <ul class="Links">
+          <li><a href="index.html" onmouseover="show('m1')">Home</a></li>
+          <li>
+            <span onmouseover="show('m3')">Products</span> 
+            <div id="m3" onmouseover="show('m3')">
+              <a href="pages/catalog.html">Tees</a>
+              <a href="pages/featured.html">Hoodies</a>
+              <a href="pages/services.html">Pants</a>
+            </div>
+          </li>
+          <li><a href="pages/about.html" onmouseover="show('m1')">About Us</a></li>
+          <li><a href="pages/feedbackForm.html" onmouseover="show('m1')">Contact Us</a></li>
+        </ul>
+      </nav>
+
     </header>
     <main>
       <article id="textRight">
@@ -15,7 +55,8 @@
       </article>
     </main>
     <footer>
-      <!--#include virtual="../common/footer_content.html"-->
+      <!-- footer_content.html -->
+      Nature's Source &copy; 2015 Porter Scobey and Pawan Lingras
     </footer>
   </body>
 </html>
