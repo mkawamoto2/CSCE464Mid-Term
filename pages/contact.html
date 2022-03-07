@@ -44,19 +44,9 @@
     </header>
     <main>
       <article class="Feedback">
-        <h4>Feedback Form ... Let Us Know What You Think</h4>
+        <h4>Contact Form ...</h4>
         <form id="contactForm" onsubmit="feedbackFormValidate()">
           <table>
-            <tr>
-              <td>Salutation:</td>
-              <td><select name="salute">
-                <option>&nbsp;</option>
-                <option>Mrs.</option>
-                <option>Ms.</option>
-                <option>Mr.</option>
-                <option>Dr.</option>
-              </select></td>
-            </tr>
             <tr>
               <td>First Name:</td>
               <td><input type="text" name="firstName" size="40"
@@ -79,25 +69,9 @@
                   required></td>
             </tr>
             <tr>
-              <td>Phone Number:</td>
-              <td><input type="text" name="phone" size="40"
-                  title="xxx-yyy-zzzz, area code optional"
-                  pattern="^(\d{3}-)?\d{3}-\d{4}$" required></td>
-            </tr>
-            <tr>
-              <td>Subject:</td>
-              <td><input type="text" name="subject" size="40" required></td>
-            </tr>
-            <tr>
               <td>Comments:</td>
               <td><textarea name="message" rows="6" cols="50">
               </textarea></td>
-            </tr>
-            <tr>
-              <td colspan="2">Please check here if you wish to receive
-                an e-mail reply: <input type="checkbox"
-                name="reply" value="yes"
-                onchange="handleFeedbackEmailRequest()"></td>
             </tr>
             <tr>
               <td><input type="submit" value="Send Feedback"></td>

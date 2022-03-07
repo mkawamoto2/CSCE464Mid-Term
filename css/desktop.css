@@ -41,7 +41,7 @@ two groups of links: main menu, and dropdown menus   */
 /* for the always-visible main menu options */
 .Links li {
   float: left;
-  width: 127px;
+  width: 250px;
   border-right: 1px solid #FFF;
   font-weight: bold;
   font-size: .7em;
@@ -50,7 +50,7 @@ two groups of links: main menu, and dropdown menus   */
 }
 
 .Links li:last-child {
-  width: 132px;
+  width: 250px;
   border-right-width: 0;
 }
  
@@ -80,7 +80,7 @@ two groups of links: main menu, and dropdown menus   */
 
 .Links div a {
   display: block;
-  width: 124px;
+  width: 250px;
   margin-top: 2px;
   padding-left: 3px;
   background-color: #C5DCC9;
@@ -91,13 +91,11 @@ two groups of links: main menu, and dropdown menus   */
 /**************************************************************
 home page has text at left and image at right in content area */
 article#textLeft {
-  float: left;
   width: 63%;
   margin-left: 1em;
 }
 
 div#image {
-  float: left;
   width: 33%;
   margin: 20px 0 10px;
   text-align: center;
