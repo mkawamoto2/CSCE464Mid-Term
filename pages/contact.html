@@ -1,12 +1,24 @@
+<!DOCTYPE html>
+<!-- document_head.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/desktop.css">
+    <script src="../scripts/menus.js"></script>
+    <script src="../scripts/contactFormValidate.js"></script>
+    <title>CSCE 464 Merch</title>
+  </head>
+
 <!-- contactForm.html -->
   <body>
     <header>
       <!-- logo.html -->
       <div id="logo">
-        <img src="../images/naturelogo.gif"
+        <img src="../images/header.png"
           alt="Nature's Source"
-          width="608"
-          height="90">
+          width="768"
+          height="192"> 
       </div>
 
       <!-- menus.html -->
@@ -18,7 +30,6 @@
             <div id="m3" onmouseover="show('m3')">
               <a href="tees.html">Tees</a>
               <a href="hoodies.html">Hoodies</a>
-              <a href="pants.html">Pants</a>
             </div>
           </li>
           <li><a href="about.html" onmouseover="show('m1')">About Us</a></li>
@@ -54,12 +65,12 @@
                   required></td>
             </tr>
             <tr>
-              <td>Comments:</td>
+              <td>Message:</td>
               <td><textarea name="message" rows="6" cols="50">
               </textarea></td>
             </tr>
             <tr>
-              <td><input type="submit" value="Send Feedback"></td>
+              <td><input type="submit" value="Send Message"></td>
               <td><input type="reset" value="Reset Form"></td>
             </tr>
           </table>

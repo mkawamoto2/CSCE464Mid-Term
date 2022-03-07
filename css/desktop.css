@@ -17,7 +17,7 @@ main, header, footer, nav, article { display: block; }
 width and margin properties set here apply only to body;
 font properties set here will be inherited throughout   */
 body {
-  width: 900px;
+  width: 1203px;
   margin: 20px auto 0 auto;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 1em;
@@ -39,8 +39,7 @@ two groups of links: main menu, and dropdown menus   */
 /* for the always-visible main menu options */
 .Links li {
   float: left;
-  width: 200px;
-  height: 100px;
+  width: 300px;
   border-right: 1px solid #FFF;
   font-weight: bold;
   font-size: .7em;
@@ -49,7 +48,7 @@ two groups of links: main menu, and dropdown menus   */
 }
 
 .Links li:last-child {
-  width: 200px;
+  width: 300px;
   border-right-width: 0;
 }
  
@@ -60,30 +59,30 @@ two groups of links: main menu, and dropdown menus   */
   display: block;
   height: 25px;
   line-height: 25px;
-  background-color: #2e92e4;
+  background-color: #ff0000;
   color: #FFF;
   text-decoration: none;
 }
 
 .Links li a:hover {
-  background-color: #2e92e4;
+  background-color: #ff0000;
   color: #FFF;
 }
 
 /* for the dropdown menu options */
 .Links div {
   position: absolute;
-  background-color: #2e92e4;
+  background-color: #ff0000;
   visibility: hidden;
 }
 
 .Links div a {
   display: block;
-  width: 200px;
+  width: 300px;
   margin-top: 2px;
   padding-left: 3px;
   background-color: white;
-  color: #2e92e4;
+  color: #ff0000;
   text-align: left;
 }
 
@@ -118,8 +117,8 @@ article#textRight {
 
 article.Contact {
   margin-top: 20px;
-  padding: 20px 50px;
-  background-color: #FFB;
+  padding: 20px 20px;
+  background-color: rgb(255, 175, 175);
 }
 
 .Centered { text-align: center; }
