@@ -11,7 +11,7 @@
     <title>CSCE 464 Merch</title>
   </head>
 
-<!-- featured.html -->
+<!-- contactForm.html -->
   <body>
     <header>
       <!-- logo.html -->
@@ -21,7 +21,7 @@
           width="768"
           height="192"> 
       </div>
-      
+
       <!-- menus.html -->
       <nav onmouseout="hide()">
         <ul class="Links">
@@ -40,20 +40,38 @@
 
     </header>
     <main>
-      <div style="margin: 100px 0px 0px 0px" id="textRight">
-        <img src="../images/black_hoodie.png"
-             alt="Black Hoodie"
-             width="480"
-             height="360">
-        <img src="../images/white_hoodie.png"
-             alt="White Hoodie"
-             width="480"
-             height="360">
-      </div>
-      <div>
-        <button style="margin:20px 0px 0px 210px; width: 50px; height: 20px"><a href="order.html"> Buy </a></button>
-        <button style="margin:20px 0px 0px 435px; width: 50px; height: 20px"><a href="order.html"> Buy </a></button>
-      </div>
+      <article class="Contact">
+        <h4>Order Details ...</h4>
+        <form id="contactForm" onsubmit="orderFormValidate()">
+          <table>
+            <tr>
+              <td>First Name:</td>
+              <td><input type="text" name="firstName" size="40"
+                  title="Initial capital, then lowercase and no spaces"
+                  pattern="^[A-Z][a-z]*$" required></td>
+            </tr>
+            <tr>
+              <td>Last Name:</td>
+              <td><input type="text" name="lastName" size="40"
+                  title="Initial capital, then lowercase and no spaces"
+                  pattern="^[A-Z][a-z]*$" required></td>
+            </tr>
+            <tr>
+              <td>E-mail Address:</td>
+              <td><input type="text" name="email" size="40"
+                  title=
+                  "x@y.z, x and y can have . or -, z only 2 or 3 letters"
+                  pattern=
+                  "^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})$"
+                  required></td>
+            </tr>
+            <tr>
+              <td><input type="submit" value="Confirm Order"></td>
+              <td><input type="reset" value="Reset Form"></td>
+            </tr>
+          </table>
+        </form>
+      </article>
     </main>
   </body>
 </html>

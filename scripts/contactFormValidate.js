@@ -1,10 +1,10 @@
-//feedbackFormValidate.js
+//contactFormValidate.js
 //Now, since the actual validation has been shifted to the
 //pattern attribute of the input elements in the HTML file,
 //all this script has to do is report that all went well and,
 //if required, mention that e-mail replies are not yet available.
 
-function feedbackFormValidate()
+function contactFormValidate()
 {
     textToDisplay = "<p>All the information looks good.<br>Thank you!</p>"
     var feedbackDisplay = window.open("", "",
