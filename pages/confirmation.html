@@ -5,23 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../css/desktop.css">
-    <script src="../scripts/menus.js"></script>
-    <script src="../scripts/contactFormValidate.js"></script>
-    <script src="../scripts/orderFormValidate.js"></script>
+    <script src="scripts/menus.js"></script>
+    <script src="scripts/contactFormValidate.js"></script>
+    <script src="scripts/orderFormValidate.js"></script>
     <title>CSCE 464 Brand</title>
   </head>
 
-<!-- featured.html -->
-  <body>
+  <body onload="startRotation()">
     <header>
       <!-- logo.html -->
       <div id="logo">
         <img src="../images/header.png"
-          alt="CSCE 464 Brand"
-          width="768"
-          height="192"> 
+             alt="CSCE 464 Brand"
+             width="768"
+            height="192">
       </div>
-      
+
       <!-- menus.html -->
       <nav onmouseout="hide()">
         <ul class="Links">
@@ -40,20 +39,10 @@
 
     </header>
     <main>
-      <div style="margin: 100px 0px 0px 0px" id="textRight">
-        <img src="../images/black_hoodie.png"
-             alt="Black Hoodie"
-             width="480"
-             height="360">
-        <img src="../images/white_hoodie.png"
-             alt="White Hoodie"
-             width="480"
-             height="360">
-      </div>
-      <div>
-        <button style="margin:20px 0px 0px 210px; width: 50px; height: 20px"><a href="order.html"> Buy </a></button>
-        <button style="margin:20px 0px 0px 435px; width: 50px; height: 20px"><a href="order.html"> Buy </a></button>
-      </div>
+      <article id="textLeft">
+        <h3>Thank You For Your Purchase!<br>
+        </h3>
+      </article>
     </main>
   </body>
 </html>
