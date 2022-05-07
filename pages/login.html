@@ -11,7 +11,7 @@
     <title>CSCE 464 Brand</title>
   </head>
 
-<!-- catalog.html -->
+<!-- contactForm.html -->
   <body>
     <header>
       <!-- logo.html -->
@@ -19,7 +19,7 @@
         <img src="../images/header.png"
           alt="CSCE 464 Brand"
           width="768"
-          height="192">
+          height="192"> 
       </div>
 
       <!-- menus.html -->
@@ -40,22 +40,24 @@
 
     </header>
     <main>
-      <div style="margin: 100px 0px 0px 0px" id="textRight">
-        <img src="../images/black_tee.png"
-             alt="Black Tee"
-             width="480"
-             height="360">
-        <img src="../images/white_tee.png"
-             alt="White Tee"
-             width="480"
-             height="360">
-      </div>
-      <div>
-        <label style="margin: 0px 0px 0px 100px" for="blacktee">Black Tee - $24</label>
-        <a href="blackteepurchase.html"><button id="blacktee" style="margin: 30px 0px 50px 0px; width: 150px; height: 70px"> Buy </button></a>
-        <label style="margin: 0px 0px 0px 200px" for="whitetee">White Tee - $24</label>
-        <a href="whiteteepurchase.html"><button id="whitetee" style="margin: 30px 0px 50px 0px; width: 150px; height: 70px"> Buy </button></a>
-      </div>
+        <fieldset>
+            <legend>Registration Form</legend>
+            <form name="frmRegistration" method="post" action="../login.php">
+            <p>
+            <label for="username">Username</label>
+            <input type="text" name="txtUsername" id="txtUsername">
+            </p>
+            <p>
+            <label for="password">Password</label>
+            <textarea name="txtPassword" id="txtPassword"></textarea>
+            </p>
+            <p>&nbsp;</p>
+            <p>
+            <input type="submit" name="Submit" id="Submit" value="Submit">
+            </p>
+            </form>
+            <li><a href="registration.html" onmouseover="show('m1')">Register</a></li>
+        </fieldset>
     </main>
   </body>
 </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- document_head.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/desktop.css">
+    <script src="../scripts/menus.js"></script>
+    <script src="../scripts/contactFormValidate.js"></script>
+    <script src="../scripts/orderFormValidate.js"></script>
+    <title>CSCE 464 Brand</title>
+  </head>
+
+<!-- contactForm.html -->
+  <body>
+    <header>
+      <!-- logo.html -->
+      <div id="logo">
+        <img src="../images/header.png"
+          alt="CSCE 464 Brand"
+          width="768"
+          height="192"> 
+      </div>
+    </header>
+
+    <main>
+        <fieldset>
+            <legend>Registration Form</legend>
+            <form name="frmRegistration" method="post" action="../scripts/registration.php">
+              <p>
+              <label for="email">Email</label>
+              <input type="text" name="txtEmail" id="txtEmail">
+              </p>
+              <p>
+              <label for="username">Username</label>
+              <input type="text" name="txtUsername" id="txtUsername">
+              </p>
+              <p>
+              <label for="password">Password</label>
+              <textarea name="txtPassword" id="txtPassword"></textarea>
+              </p>
+              <p>&nbsp;</p>
+              <p>
+              <input type="submit" name="Submit" id="Submit" value="Register">
+              </p>
+            </form>
+        </fieldset>
+        <ul class="Links">
+          <li><a href="../index.html" onmouseover="show('m1')">Log In</a></li>
+        </ul>
+    </main>
+  </body>
+</html>

@@ -25,7 +25,7 @@
       <!-- menus.html -->
       <nav onmouseout="hide()">
         <ul class="Links">
-          <li><a href="../index.html" onmouseover="show('m1')">Home</a></li>
+          <li><a href="home.html" onmouseover="show('m1')">Home</a></li>
           <li>
             <span onmouseover="show('m3')">Products</span> 
             <div id="m3" onmouseover="show('m3')">
@@ -42,8 +42,11 @@
     <main>
       <article class="Contact">
         <h4>Order Details ...</h4>
-        <form id="contactForm" action="confirmation.html">
+        <form name="frmOrder" method="post" action="../scripts/order.php">
           <table>
+            <br>
+            <br>
+            <th>Personal Information</th>
             <tr>
               <td>First Name:</td>
               <td><input type="text" name="firstName" size="40"
@@ -66,7 +69,49 @@
                   required></td>
             </tr>
             <tr>
-              <td><input type="submit" value="Confirm Order"></td>
+              <td>Address:</td>
+              <td><input type="text" name="address" size="40"
+                  required></td>
+            </tr>
+            <tr>
+              <td>City:</td>
+              <td><input type="text" name="city" size="40"
+                  title="Initial capital, then lowercase and no spaces"
+                  pattern="^[A-Z][a-z]*$" required></td>
+            </tr>
+            <tr>
+              <td>State:</td>
+              <td><input type="text" name="state" size="40"
+                  title="xx, where x is any letter"
+                  pattern="[a-zA-Z]{2}" required></td>
+            </tr>
+            <tr>
+              <td>Zip Code:</td>
+              <td><input type="text" name="zipCode" size="40"
+                  title="xxxxx, x is any digit 0-9"
+                  pattern="\d{5}" required></td>
+            </tr>
+            <th>Payment Information</th>
+            <tr>
+              <td>Card Number:</td>
+              <td><input type="text" name="cardNumber" size="40"
+                  title="xxxx-xxxx-xxxx-xxxx, x is any digit 0-9"
+                  pattern="\d{4}-\d{4}-\d{4}-\d{4}" required></td>
+            </tr>
+            <tr>
+              <td>Security Code:</td>
+              <td><input type="text" name="securityCode" size="40"
+                  title="xxx, x is any digit 0-9"
+                  pattern="\d{3}" required></td>
+            </tr>
+            <tr>
+              <td>Expiration Date:</td>
+              <td><input type="text" name="expirationDate" size="40"
+                  title="a/bc, a is any digit 0-12, b and c are any digit 0-9"
+                  pattern="[1-9]|1[0-2]/\d{2}" required></td>
+            </tr>
+            <tr>
+              <td><input type="submit" name="Submit" id="Submit" value="Confirm Order"></td>
               <td><input type="reset" value="Reset Form"></td>
             </tr>
           </table>

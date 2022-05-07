@@ -11,63 +11,39 @@
     <title>CSCE 464 Brand</title>
   </head>
 
-  <body onload="startRotation()">
+<!-- contactForm.html -->
+  <body>
     <header>
       <!-- logo.html -->
       <div id="logo">
         <img src="images/header.png"
-             alt="CSCE 464 Brand"
-             width="768"
-            height="192">
+          alt="CSCE 464 Brand"
+          width="768"
+          height="192"> 
       </div>
-
-      <!-- menus.html -->
-      <nav onmouseout="hide()">
-        <ul class="Links">
-          <li><a href="index.html" onmouseover="show('m1')">Home</a></li>
-          <li>
-            <span onmouseover="show('m3')">Products</span> 
-            <div id="m3" onmouseover="show('m3')">
-              <a href="pages/tees.html">Tees</a>
-              <a href="pages/hoodies.html">Hoodies</a>
-            </div>
-          </li>
-          <li><a href="pages/about.html" onmouseover="show('m1')">About Us</a></li>
-          <li><a href="pages/contact.html" onmouseover="show('m1')">Contact Us</a></li>
-        </ul>
-      </nav>
-
     </header>
+
     <main>
-      <h3>Welcome to CSCE 464 Brand:<br></h3>
-      <div style="margin: 100px 0px 0px 0px" id="textRight">
-        <img src="images/black_tee.png"
-             alt="Black Tee"
-             width="480"
-             height="360">
-        <img src="images/white_tee.png"
-             alt="White Tee"
-             width="480"
-             height="360">
-      </div>
-      <div>
-        <button style="margin:40px 0px 40px 170px; width: 150px; height: 70px"><a href="pages/order.html"> Buy </a></button>
-        <button style="margin:40px 0px 40px 330px; width: 150px; height: 70px"><a href="pages/order.html"> Buy </a></button>
-      </div>
-      <div style="margin: 100px 0px 0px 0px" id="textRight">
-        <img src="images/black_hoodie.png"
-             alt="Black Hoodie"
-             width="480"
-             height="360">
-        <img src="images/white_hoodie.png"
-             alt="White Hoodie"
-             width="480"
-             height="360">
-      </div>
-      <div>
-        <button style="margin:40px 0px 40px 170px; width: 150px; height: 70px"><a href="pages/order.html"> Buy </a></button>
-        <button style="margin:40px 0px 40px 330px; width: 150px; height: 70px"><a href="pages/order.html"> Buy </a></button>
-      </div>
+        <fieldset>
+            <legend>Login Form</legend>
+            <form name="frmLogin" method="post" action="scripts/login.php">
+            <p>
+            <label for="username">Username</label>
+            <input type="text" name="txtUsername" id="txtUsername">
+            </p>
+            <p>
+            <label for="password">Password</label>
+            <textarea name="txtPassword" id="txtPassword"></textarea>
+            </p>
+            <p>&nbsp;</p>
+            <p>
+            <input type="submit" name="Submit" id="Submit" value="Log In">
+            </p>
+            </form>
+        </fieldset>
+        <ul class="Links">
+          <li><a href="pages/registration.html" onmouseover="show('m1')">Register</a></li>
+        </ul>
     </main>
   </body>
 </html>
